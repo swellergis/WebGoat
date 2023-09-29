@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'b95d84b1-ed6e-4d8e-9b3e-37b8e50770ea'
 
   # Web app name
-  webAppName: 'lumenwebgoat'
+  webAppName: 'java-17-linapp'
 
   # Environment name
-  environmentName: 'lumenwebgoat'
+  environmentName: 'java-17-linapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -61,7 +61,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: lumenwebgoat'
+            displayName: 'Azure Web App Deploy: java-17-linapp'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
